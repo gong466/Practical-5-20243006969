@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_default_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/main_title"
+        android:textColor="@color/color_text_dark"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_municipalities"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/cd_municipalities_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chinese_municipalities" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/input_label"
+        android:textColor="@color/color_text_dark"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_municipality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/input_hint"
+        android:imeOptions="actionGo"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:textColor="@color/color_text_dark" />
+</LinearLayout>
